@@ -1,0 +1,297 @@
+    body {
+        background: linear-gradient(to right, rgb(0, 0, 0), rgb(238, 244, 236));
+        background-size: 200% 200%;
+        padding: 20px;
+        color: white; /* Text color */
+        height: 100vh; /* Full viewport height */
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        animation: MovingGradient 15s ease infinite;
+        overflow: hidden;
+    }
+
+    @keyframes MovingGradient {
+        0% { background-position: 0% 50%; }
+        50% { background-position: 100% 50%; }
+        100% { background-position: 0% 50%; }
+    }
+
+    .ambassador{
+        position: absolute;
+        top: 450px;
+        left: 1550px;
+        max-width: 400px;
+        max-height: 500px;
+        height: 100%;
+        width: 100%; 
+        border-radius: 30px;
+        box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.5); /* Horizontal offset, vertical offset, blur radius, color */
+    }
+
+
+    .smartLogo{
+        position: absolute;
+        top:100px;
+        left: 750px;
+        max-width: 630px;
+        max-height: 230px;
+        height: 100%;
+        width: 100%;
+    }
+    .dito{
+        position: absolute;
+        top:100px;
+        left: 1400px;
+        max-width: 630px;
+        max-height: 230px;
+        height: 100%;
+        width: 100%;
+    }
+    .globe{
+        position: absolute;
+        top:100px;
+        left: 100px;
+        max-width: 630px;
+        max-height: 230px;
+        height: 100%;
+        width: 100%;
+    }
+
+    .payMaya{
+        position: absolute;
+        top: 700px;
+        left: 120px;
+        max-width: 400px;
+        max-height: 100px;
+        height: 100%;
+        width: 100%;  
+    }
+    .masterLogo{
+        position: absolute;
+        top: 500px;
+        left: 180px;
+        max-width: 300px;
+        max-height: 150px;
+        height: 100%;
+        width: 100%;  
+    }
+
+    .promoType{
+        font-weight:bolder;
+        font-family: Arial, sans-serif; /* Specifies the font family */
+        font-size: 100px;
+        position: absolute;
+        top: 390px;
+        left: 720px;
+        text-shadow: 10px 10px 20px rgba(0, 0, 0, 0.5); /* Horizontal offset, vertical offset, blur radius, color */
+    }
+    .promoTypeInput{
+        font-family: Arial, sans-serif; /* Specifies the font family */
+        font-size: 50px; /* Specifies the font size */
+        padding: 10px; /* Adds padding around the input text */
+        border: 1px solid #ccc; /* Specifies the border style */
+        border-radius: 10px; /* Rounds the corners of the border */
+        max-width: 700px;
+        max-height: 100px;
+        height: 100%;
+        width: 100%; /* Makes the input take up the full width of its container */
+        box-sizing: border-box; /* Includes padding and border in the element's total width and height */
+        position: absolute;
+        top: 530px;
+        left: 700px;
+        box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.5); /* Horizontal offset, vertical offset, blur radius, color */
+        
+    }
+    .phoneNumberInput{
+        font-family: Arial, sans-serif; /* Specifies the font family */
+        font-size: 50px; /* Specifies the font size */
+        padding: 10px; /* Adds padding around the input text */
+        border: 1px solid #ccc; /* Specifies the border style */
+        border-radius: 10px; /* Rounds the corners of the border */
+        max-width: 700px;
+        max-height: 100px;
+        height: 100%;
+        width: 100%; /* Makes the input take up the full width of its container */
+        box-sizing: border-box; /* Includes padding and border in the element's total width and height */
+        position: absolute;
+        top: 650px;
+        left: 700px;
+        box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.5); /* Horizontal offset, vertical offset, blur radius, color */
+        
+    }
+
+    input:focus {
+        border: 3px solid rgb(3, 215, 18); /* Specifies the border style */
+        outline: none; /* Removes the default outline */
+    }
+
+    .recordButton{
+        position: absolute;
+        top: 800px;
+        left: 970px;
+        font-family: Arial, sans-serif; /* Specifies the font family */
+        font-size: 30px; /* Specifies the font size */
+        color: #ffffff; /* Specifies the text color */
+        border-radius: 10px;
+        background-color: #29a918c6; /* Specifies the background color */
+        border: none; /* Removes the default border */
+        padding: 10px 20px; /* Adds padding around the text */
+        text-align: center; /* Aligns the text to the center */
+        text-decoration: none; /* Removes any text decoration */
+        display: inline-block; /* Allows the button to have a width and height */
+        cursor: pointer; /* Changes the cursor to a pointer when hovering over the button */
+        transition: background-color 0.3s ease; /* Adds a transition effect to the background color */
+        box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.5); /* Horizontal offset, vertical offset, blur radius, color */
+    }
+    .recordButton:hover {
+        background-color: #ffffff; /* Changes the background color on hover */
+        color: #29a918c6;
+    }
+    .dashboardButton{
+        background: none;
+        border: none;
+        color: #ffffff;
+        font-size: 30px;
+        position: absolute;
+        top: 900px;
+        left: 900px;   
+        cursor: pointer; /* Changes the cursor to a pointer when hovering over the button */
+        text-shadow: 10px 10px 20px rgba(0, 0, 0, 0.5); /* Horizontal offset, vertical offset, blur radius, color */
+    }
+    .dashboardButton:hover{
+        color: #29a918c6;
+    }
+
+    .summaryTable{
+        position: absolute;
+        top: 200px;
+        left: 130px;
+        font-size: 35px;
+    }
+
+    .recordTable{
+        position:absolute;
+        top: 500px;
+        left: 600px;
+        font-size: 35px;
+
+    }
+
+    .backButton{
+        position: fixed;
+        top: 900px;
+        left: 100px;
+        font-family: Arial, sans-serif; /* Specifies the font family */
+        font-size: 30px; /* Specifies the font size */
+        color: #ffffff; /* Specifies the text color */
+        border-radius: 10px;
+        background-color: #0a9106ad; /* Specifies the background color */
+        border: none; /* Removes the default border */
+        padding: 10px 20px; /* Adds padding around the text */
+        text-align: center; /* Aligns the text to the center */
+        text-decoration: none; /* Removes any text decoration */
+        display: inline-block; /* Allows the button to have a width and height */
+        cursor: pointer; /* Changes the cursor to a pointer when hovering over the button */
+        transition: background-color 0.3s ease; /* Adds a transition effect to the background color */
+        text-shadow: 10px 10px 20px rgba(0, 0, 0, 0.5); /* Horizontal offset, vertical offset, blur radius, color */ 
+    }
+    .backButton:hover{
+        background-color: #ffffff; /* Changes the background color on hover */
+        color: #0a9106ad;
+    }
+    .sales{
+        font-family: Arial, sans-serif; /* Specifies the font family */
+        font-weight: bolder;
+        font-size: 70px;
+        position: absolute;
+        top: 100px;
+        left: 930px;    
+    }
+
+    .statistics{
+        position: absolute;
+        font-family: Arial, sans-serif; /* Specifies the font family */
+        font-weight: bolder;
+        font-size: 70px;
+        top:410px;
+        left: 850px;
+    }
+
+    .smartPhoto{
+        position: absolute;
+        top:270px;
+        left: 150px;
+        max-width: 400px;
+        max-height: 350px;
+        height: 100%;
+        width: 100%;
+    }
+
+    .sunPhoto{
+        position: absolute;
+        top:270px;
+        left: 1550px;
+        max-width: 410px;
+        max-height: 310px;
+        height: 100%;
+        width: 100%;
+    }
+
+    .sticker{
+        position: absolute;
+        top:50px;
+        left: 650px;
+        max-width: 1500px;
+        max-height:1500px;
+        height: 100%;
+        width: 100%;
+    }
+    .sticker1{
+        position: absolute;
+        top:0px;
+        left: -200px;
+        max-width: 2500px;
+        max-height:3500px;
+        height: 100%;
+        width: 100%;
+    }
+
+
+    .summaryTable{
+        position: absolute;
+        top: 200px;
+        left:520px;
+    }
+    .recordTable,
+    .summaryTable {
+        position: absolute;
+        font-size: 35px;
+        border-collapse: collapse; /* This ensures that table borders collapse into a single border */
+    }
+
+    .recordTable th,
+    .recordTable td,
+    .summaryTable th,
+    .summaryTable td {
+        border: 1px solid #ffffff; /* Add borders to table cells */
+        padding: 8px; /* Add padding to cell content */
+    }
+
+    .recordTable th {
+        background-color: #0a9106ad; /* Add a background color to table headers */
+    }
+    .summaryTable th{
+        background-color: #0a9106ad; /* Add a background color to table headers */ 
+    }
+
+    .recordTable td:nth-child(n+1),
+    .summaryTable td:nth-child(n+1) {
+        background-color: #ffffff; /* Set background color to white for all cells after the first cell */
+        color: #000000; /* Set text color to black for all cells after the first cell */
+        border: 1px solid #000000; /* Add borders to table cells */
+    }
+
+    

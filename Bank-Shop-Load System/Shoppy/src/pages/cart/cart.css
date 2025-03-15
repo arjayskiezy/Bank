@@ -1,0 +1,92 @@
+.cart {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.cartItem {
+  width: 700px;
+  height: 250px;
+  display: flex;
+
+  align-items: center;
+  box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.2);
+  border-radius: 25px;
+  margin: 30px;
+}
+
+.cartItem img {
+  width: 200px;
+}
+
+.cartItem .description {
+  width: 100%;
+  font-size: 30px;
+}
+
+.countHandler input {
+  width: 40px;
+  text-align: center;
+  font-weight: bolder;
+}
+
+
+.button-container {
+  display: flex;
+  justify-content: space-between; /* Aligns items along the horizontal line */
+  gap: 1px; /* Adds space between the buttons */
+ }
+
+.checkout button {
+  width: 150px;
+  height: 50px;
+  background-color: rgb(19, 19, 19);
+  color: white;
+  border: none;
+  border-radius: 8px;
+  margin: 10px auto; /* Center the button */
+  display: block; /* Ensure the button is treated as a block element */
+  cursor: pointer;
+  transition: background-color 0.3s ease; /* Smooth transition for hover effect */
+ }
+ 
+ .checkout button:hover {
+  background-color: rgb(102, 102, 102); /* Darken the background on hover */
+ }
+
+.Subtotal{
+  font-weight: bold;
+  font-size: 40px;
+  text-align: center;
+}
+
+.custom-inputs {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.custom-inputs .MuiFormControl-root {
+  width: 25ch;
+}
+.account{
+  font-weight: bold;
+  font-size: 30px;
+  text-align: center;
+}
+
+.shadowAccount{
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.3) ;
+  border-radius: 10px;
+  padding: 20px; /* Add some padding inside the box */
+  margin-bottom: 10px;
+}
+
+.shadowSubtotal{
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.3) ;
+  border-radius: 10px;
+  padding: 1px; /* Add some padding inside the box */
+  margin-bottom: 40px;
+  margin-top: 40px;
+}

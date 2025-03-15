@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Record Promo Details</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="register">
+        <img src="gg_power.png" class="ambassador">
+        <img src="Globe-logo.png" class="globe">
+        <img src="Dito_Telecommunity_2021_logo.png" class="dito">
+        <img src="Maya_logo.svg.png" class="payMaya">
+        <img src="smart-live-more-logo.png" class="smartLogo">
+        <img src="Mastercard-logo.svg.png" class="masterLogo">
+        <label for="promoType" class="promoType">PROMO TYPE</label>
+        <input type="text" id="promoType" class="promoTypeInput" placeholder="Enter Promo Type">
+        <input type="text" id="phoneNumber" class="phoneNumberInput" placeholder="Enter Phone Number">
+        <button id="recordButton" class="recordButton">Record</button>
+        <button id="dashboardButton" class="dashboardButton">SEE DASHBOARD</button>
+    </div>
+
+    <div class="registered" id="registered" style="display: none;"> 
+        <h1>REGISTER SUCCES</h1>
+        <button id = "okayRegistered">OKAY</button>
+    </div>
+    <div class="unRegistered" id="unRegistered" style="display: none;">
+        <h1>INVALID INPUT</h1>
+        <button id = "okayRegistered">OKAY</button>
+    </div>
+
+
+    <div id="dashBoard" style="display: none;"> 
+        <img src="pngkey.com-abstract-design-png-1383389.png" class="sticker">
+        <img src="1.png" class="sticker1">
+        <img src="smart-prepaid-sim-image.png" class="smartPhoto">
+        <img src="sunsmart-logo.png" class="sunPhoto">
+        <button id="backButton" class="backButton">Back</button>
+        <label for="sales" class="sales">SALES</label>  
+        <table id="recordTable" class="recordTable">
+            <thead>
+                <tr>
+                    <th>Promo Type</th>
+                    <th>Amount</th>
+                    <th>Date</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Rows will be added here dynamically -->
+            </tbody>
+        </table>
+        <table id="summaryTable" class="summaryTable">
+            <label for="statistics" class="statistics">STATISTICS</label>
+            <thead>
+                <tr>
+                    <th>Frequently Sold</th>
+                    <th>Least Popular Promo</th>
+                    <th>Average Sale</th>
+                    <th>Total Sale</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td id="frequentlySold"></td>
+                    <td id="leastPopularPromo"></td>
+                    <td id="averageSale"></td>
+                    <td id="totalSale"></td> 
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
